@@ -1,4 +1,6 @@
 # Docker 18.09 in ubuntu 18.04
+## run docker command line with our `sudo`, after add current linux user into docker group, use below command to make it take effect
+newgrp docker 
 ## Common Docker commands:
 ### start up an Apache server in dettach mode, so you could continue your work
 `docker container run -d -it -p 8080:80 httpd`
